@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <style type="text/css">
+        .dollars:before {
+            content: '$';
+        }
+    </style>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h3>Señor(a)</h3>
+    <strong><?= candidato.nombre ?></strong>
+    <p><strong>Referencia:</strong> Acuerdo de pago y congelación de la deuda.
+        <p>
+            <p>Adenda al contrato <strong><?= candidato.contrato ?></strong> de acuerdo a las condiciones establecidas en el cupo aprobado número <strong><?= candidato.cupo ?></strong>.</p>
+            <p>La empresa VERFOND S.A.S. propone congelar la deuda registrada a nombre de
+                <?= candidato.nombre ?> identificado(a) con numero de cedula
+                    <?= candidato.cedula ?> (En adelante el DEUDOR), sin pago de intereses de mora ni corrientes. La deuda en mora se seguirá reportando a las centrales de riesgo hasta que finalice totalmente el acuerdo acá planteado. </p>
+            <p>El valor establecido como pago total para este acuerdo es de
+                <?= candidato.saldototal ?> el cual debe ser liquidado en
+                    <?= candidato.plazototal ?> CUOTA(S) mensuales y sucesivas, la primera de ellas por valor de
+                        <?= candidato.pagoinicial ?> pesos, posteriormente deberá pagar
+                            <?= candidato.segundascuotas ?> cuotas, cada una de ellas por valor de
+                                <?= candidato.montocuota ?> pesos. La primera cuota se pagará el día
+                                    <?= candidato.fechadeinicio ?>, las siguientes cuotas se pagarán de manera sucesiva y sin interrupción desde la fecha pactada para el pago de la primera cuota cada 30 días. </p>
+            <h3>SANCIÓN POR INCUMPLIMIENTO</h3>
+            <p>Si el DEUDOR INCUMPLE el presente acuerdo en cualquiera de las cuotas pactadas, la presente adenda se quedará sin efectos legales si se retomará las condiciones del cupo
+                <?= candidato.cupo ?> y el contrato
+                    <?= candidato.contrato ?>. </p>
+            Pagos sin costo únicamente por
+            <ul>
+                <li>Transferencia electrónica desde la APP del banco.</li>
+                <li>Desde su celular con la aplicación Nequi o DaviPlata.</li>
+            </ul>
+
+            Transferencia a la cuenta: Ahorros Bancolombia 031-000745-74 a nombre de la empresa VERFOND S.A.S. NIT 901292638-9.
+
+            <ul>
+                <li>Pagos con costo de 10.950 pesos.</li>
+                <li>Corresponsales bancarios.</li>
+                <li>Transferencia desde el cajero automático.</li>
+                <li>Transferencia desde el cajero automático.</li>
+            </ul>
+            Otros medios de pago con costo, solicite su link de pago
+            <ul>
+                <li>PSE, Baloto, Efecty, Gana, Servi, Puntored, Safety, Pay.</li>
+            </ul>
+
+            EN SUCURSAL FÍSICA DE BANCOLOMBIA
+
+            <ul>
+                <li>Sucursal física del Bancolombia (consultar el valor de la transferencia).</li>
+            </ul>
+
+            Cordialmente,
+            <br>
+            <br>
+            <p>HÉCTOR ALEJANDRO ACOSTA GONZALEZ
+                <br> Representante legal VERFOND S.A.S
+                <br> N.I.T 901292638-9
+                <br> Facebook e Instagram; @prestanetco
+            </p>
+
+            <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
